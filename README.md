@@ -1,7 +1,5 @@
-mid-week-challenges
+Dev RampUp Mid Week Challenges
 ===================
-
-Mid week challenges for the Dev RampUp
 
 Dev-Sprint6-Challenge:
 ---
