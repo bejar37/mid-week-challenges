@@ -290,11 +290,11 @@ def run_eliza(inp, rule_lst):
 	num_inputs = 0
 	while user_input != "stop" and num_inputs < 10:
 		num_inputs = num_inputs + 1
-		user_input = string.split(user_input)
+		user_input = string.split(str(user_input))
 		resp = apply_rules(user_input, rule_lst)
 		if resp == "":
 			resp = default_responses[randrange(0,2)]
-		return resp
+		return eliza(rule_lst)
 
 def hi_eliza(fname):
 	return "Hello, " + fname + ". This is Eliza. What do you want to talk about today?"
@@ -343,5 +343,5 @@ def main(inp):
 	rule_lst = [r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11]
  	return run_eliza(inp, rule_lst)
 
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+  main("")
